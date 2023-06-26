@@ -1,0 +1,11 @@
+.card-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .card {
+    display: inline-block;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
