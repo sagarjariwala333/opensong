@@ -24,10 +24,10 @@ function* getSearch(action:any):any {
   };
   
   try {
-    const response = yield axios.request(options);
-    console.log("API RESPONSE",response.data.tracks.hits);
-    let data=response.data.tracks.hits;
-    //let data=dummyData;
+    //const response = yield axios.request(options);
+    //console.log("API RESPONSE",response.data.tracks.hits);
+    //let data=response.data.tracks.hits;
+    let data=dummyData;
     yield put({type:AXIOS_SEARCH_SUCCESS, data});
   } catch (error) {
     yield put({type:AXIOS_SEARCH_FAILURE,error});

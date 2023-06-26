@@ -21,10 +21,10 @@ function* getSearchHint(action: any): any {
     };
 
     try {
-        const res = yield axios.request(options);
-        //const data=dummydata.hints;
-        const data=res.data.hints;
-        console.log("Saga",res.data.hints);
+        //const res = yield axios.request(options);
+        const data=dummydata.hints;
+        //const data=res.data.hints;
+        //console.log("Saga",res.data.hints);
         yield put({ type: AXIOS_SEARCH_HINT_SUCCESS, data })
     } catch (error) {
         console.error(error);
